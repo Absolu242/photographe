@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Photographe</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+      integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="home">
+    <header>
+      <div class="navbar">
+        <a href="#home" class="logo"><img src="./logo.jpg" alt=""/></a>
+        <nav>
+          <ul class="nav_links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+          <a href="" class="cta"><span>→ </span>contact Us</a>
+        </nav>
+        <div class="menu-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+
+      <h1 class="renverse">PHOTOGRAPHY</h1>
+
+      <div class="text1">
+        <img class="head" src="./head.png" alt="" />
+        <div class="contenu">
+          <h1>PHOTOGRAPHY</h1>
+          <p>
+            HOW MILLENIALSCAN <br />
+            MAKE THE WORD A <br />
+            BETTER PLACE
+          </p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <ul class="slide_links">
+          <li><a href="#">01</a></li>
+          <li><a href="#" class="active">02</a></li>
+          <li><a href="#">03</a></li>
+          <li><a href="#">04</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section>
+      <div class="palm1"><img src="./Calque 0.png" alt="" /></div>
+
+      <div class="container">
+        <div class="contenu1">
+          <div class="head1">
+            <h2>
+              Master <br />
+              <b>PHOTOGRAPHY</b>
+            </h2>
+            <p>Photoshoot/Videoshoot/Advertising</p>
+          </div>
+          <div class="body">
+            <div class="insta"><b>Instagram</b></div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                Modi magnam doloremque reprehenderit ut quam earum <br />
+                dolorem ipsa ex sunt quibusdam, quos commodi accusamus
+                <br />Maiores excepturi adipisci minus Lorem ipsum dolorjk uytr
+                <br />
+                elit. debitis quae fugiat? Lorem ipsum dolor sit amet consect
+                etur adipisicing elit.
+              </p>
+              <a href="#"> EXPLORE OUR WORK</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenu2">
+          <div class="img1"><img src="./1.png" alt="" /></div>
+          <div class="img2"><img src="./2.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="last">
+      <div class="palm2"><img src="./palm2.png" alt="" /></div>
+      <div class="text2">
+        <p>
+          <b>
+            BLACK IS TIMELESS <br />
+            BLACK IS THE COLOR <br />
+            OF THE NIGHT
+          </b>
+        </p>
+      </div>
+      <div class="shoot">
+        <img src="./4.png" alt="" />
+      </div>
+    </section>
+    <footer>
+      <div class="box1">
+        <a href="#home" class="logo"><img src="./logo.jpg" alt=""/></a>
+      </div>
+      <div class="copy">
+        &copy; 2019 All Design Reserved Photography By Master Creationz, &copy;
+        2019 Rahan Bouess
+      </div>
+      <div class="city">
+        <select>
+          <option value="">United Kingdom</option>
+          <option value="">United Kingdom</option>
+          <option value="">United Kingdom</option>
+        </select>
+      </div>
+      <div class="dow">
+        <ul class="dow_links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contact US</a></li>
+          <span>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </span>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).on("click", ".dow_links li a", function() {
+        $(this)
+          .addClass("active")
+          .siblings()
+          .removeClass("active");
+      });
+      $(document).on("click", ".nav_links li a", function() {
+        $(this)
+          .addClass("active")
+          .siblings()
+          .removeClass("active");
+      });
+
+      $(document).ready(function() {
+        $(".toggle").click(function() {
+          $(".toggle").toggleClass("active");
+          $(".overlay").toggleClass("active");
+          $(".over1").toggleClass("active");
+          $("nav").toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
